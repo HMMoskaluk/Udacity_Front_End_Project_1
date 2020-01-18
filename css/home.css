@@ -1,3 +1,63 @@
+.header {
+    text-align: left;
+    padding: 20px;
+}
+
+.subscribe_button {
+    float: right;
+    color: snow;
+}
+
+.button {
+    color: rgb(66, 14, 55);
+    background-color: rgb(165, 139, 53);
+}
+
+nav{
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    font-size: x-large;
+    background-color: rgba(165,139,53,0.9);
+}
+
+ul .topnav {
+    position: sticky;
+    top: 0;
+    width:100%;
+}
+
 body{
-    background-color: aqua;
+    background-image: url("../images/home_background.jpg");
+    font-family: 'Play', sans-serif;
+}
+
+.about{
+    color: rgb(255, 255, 255);
+    background-color: rgba(157, 157, 158, 0.78);
+    border: 3px solid rgb(165, 139, 53);
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.bibleverse{
+    background-color: rgba(66, 14, 55, 0.6);
+}
+
+.contact_me{
+    background-color: rgba(157, 157, 158, 0.78);
+    border: 3px solid rgb(165, 139, 53);
+    padding: 10px;
+    margin: 10px;
+}
+
+li {
+    display: inline;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+} 
+
+a {
+    color: seashell;
 }

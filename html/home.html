@@ -2,29 +2,32 @@
 <html>
     <head> 
         <meta charset="UTF-8">
-        <title> Home Page </title>
-        <link rel="stylesheet" href="home.css">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="../css/home.css">
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700|Quicksand:400,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <img src="../images/ofthelight.png" alt="ofthelight logo" width="250" height="80">
-                <div class="subscribe_button">
-                    <form action="" method="">
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" placeholder="Email" name="email" required="">
-                        <input type="button" id="subscribe_button" class="subscribe_button button" value="Subscribe!">
-                    </form>
-                </div>
-        </header>
+        <div class="header">
+            <div class="ofthelight_logo">
+                <img src="../images/ofthelight.png" alt="ofthelight logo" width="400" height="150">
+            </div>   
+            <div class="subscribe_button">
+                <form action="" method="">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Email" name="email" required="">
+                    <input type="button" id="subscribe_button" class="subscribe_button button" value="Subscribe!">
+                </form>
+            </div>
+        </div class="header">
         <nav>
-            <ul>
-                <li><a href="home.html">Home Page</a></li>
+            <ul class="topnav">
+                <!-- <li><a href="home.html">Home Page</a></li> -->
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="photo-gallery.html">Photo Gallery</a></li>
             </ul>
         </nav>
         <div class="about">
-            <h2>About the Artist</h2>
+            <h1>About the Artist</h1>
                 <p>
                     OfTheLight really began years ago as I started exploring my love for art as a young child.
                     As a homeschool kid I had the liberty to paint for hours because of my flexible school schedule.
@@ -34,7 +37,7 @@
                     I could see an evident need for art and for the messages in my paintings to be seen.
                     Light is a central aspect of my work, often painted in the form of rays, and holds such symbolic meaning in the Kingdom of God.
                     The verse,
-                    <blockquote>
+                    <blockquote class="bibleverse">
                         <p>For you are all children of the light and of the day; we don't belong to darkness and night.</p>
                         <footer id=bibleverse><a href="https://www.bibleref.com/1-Thessalonians/5/1-Thessalonians-5-5.html">1 Thessalonians 5:5 (NLT)</a></footer>
                     </blockquote>
@@ -46,7 +49,7 @@
                 </p>
         </div>
         <div class="contact_me">
-            <h3>Contact Me</h3>
+            <h2>Contact Me</h2>
                 <p>
                     <form action="" method="post">
                         <div class="cform_body">
@@ -74,6 +77,14 @@
                     </form>
                 </p>
         </div>
-
+        <div class="social_media">
+            <p>Enjoy my content? Don't forget to follow me on:</p>
+            <ul class="bottom_social">
+                <li><a href="https://www.facebook.com/bynoelleperry/"><img src="../images/ofthelight_facebook.jpg" alt="facebook" width="150" height="150"></a></li>
+                <li><a href="https://www.instagram.com/ofthelight.np/"><img src="../images/ofthelight_instagram.jpg" alt="instagram" width="150" height="150"></a></li>
+                <li><a href="https://www.linkedin.com/school/udacity/"><img src="../images/linkedin_logo.png" alt="linkedin logo" width="150" height="150"></a></li>
+                <li><a href="https://twitter.com/udacity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../images/twitter_logo.png" alt="twitter logo" width="150" height="150"></a></li>
+            </ul>
+        </div>
     </body>
 </html>
