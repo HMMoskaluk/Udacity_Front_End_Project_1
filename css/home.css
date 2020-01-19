@@ -1,7 +1,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 465px 1fr 1fr;
+    grid-template-rows: 480px 1fr 1fr;
     grid-template-areas: 
     "hd"
     "main"
