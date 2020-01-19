@@ -1,11 +1,62 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 465px 1fr 1fr;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "sd"
+    "ft";
+}
+
+#header{
+    grid-area: hd;    
+}
+
+#about{
+    grid-area: main;
+}
+
+#contact{
+    grid-area: sd;
+}
+
+#footer{
+    grid-area: ft;
+}
+
+@media(min-width:600px) and (max-width:875px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 465px 1fr 1fr;
+        grid-template-areas: 
+        "hd hd"
+        "main main"
+        "sd sd"
+        "ft ft";
+    }
+}
+
+@media(min-width:876px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 1fr 250px;
+        grid-template-areas: 
+        "hd hd hd hd hd"
+        "main main main sd sd"
+        "ft ft ft ft ft";
+    }
+}
 .logo{
     display: inline-block;
     text-align: left;
     padding: 20px;
 }
-.header {
+.subscribe {
     display: inline-block;
-    text-align: left;
+    text-align: right;
     padding: 50px;
     color: rgb(66, 14, 55);
     float: right; /*why is there a line under the code??*/
@@ -34,7 +85,7 @@ nav a:hover{
 }
 
 body{
-    display: block;
+    /* display: block; */
     background-image: url("../images/home_background.jpg");
     font-family: 'Play', sans-serif;
 }
@@ -48,34 +99,13 @@ body{
     border-radius: 5px;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 250px 300px 600px;
-    grid-template-areas: 
-    "top top top"
-    "main main side"
-    "ft ft ft";
-}
-
-#top {
-    grid-area: top;
-}
-
-#main {
-    grid-area: main;
-}
-
-#side {
-    grid-area: side;
-}
-
-#foot {
-    grid-area: ft;
-}
-
 .bibleverse{
     background-color: rgba(66, 14, 55, 0.6);
+    padding: 5px;
+}
+
+.bibleverse a:hover{
+    color: rgba(165, 139, 53);
 }
 
 .contact_me{
@@ -85,6 +115,16 @@ body{
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
+}
+
+.footer{
+    color: rgb(255, 250, 250);
+    background-color: rgba(157, 157, 158, 0.78);
+    border: 3px solid rgb(165, 139, 53);
+    border-radius: 5px;
+    padding-left: 20px;
+    margin: 10px;
+    text-align: center;
 }
 
 li {
