@@ -4,7 +4,6 @@
     padding: 20px;
 }
 .subscribe {
-    display: inline-block;
     text-align: right;
     padding: 50px;
     color: rgb(66, 14, 55);
@@ -58,4 +57,31 @@ li {
 
 a {
     color: rgb(255, 250, 250);
+}
+
+#blogpost1 {
+    color: rgb(255, 250, 250);
+    background-color: rgba(157, 157, 158, 0.78);
+    border: 3px solid rgb(165, 139, 53);
+    padding-left: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#blogpost2  {
+    color: rgb(255, 250, 250);
+    background-color: rgba(100, 100, 100, 0.78);
+    border: 3px solid rgb(165, 139, 53);
+    padding-left: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#blogpost3 {
+    color: rgb(255, 250, 250);
+    background-color: rgba(157, 157, 158, 0.78);
+    border: 3px solid rgb(165, 139, 53);
+    padding-left: 10px;
+    margin: 10px;
+    border-radius: 5px;
 }
