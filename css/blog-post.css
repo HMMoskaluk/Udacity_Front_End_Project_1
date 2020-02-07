@@ -1,3 +1,49 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+}
+
+#header{
+    grid-area: hd;    
+}
+
+#blogposts {
+    grid-area: main;
+}
+
+#footer{
+    grid-area: ft;
+}
+
+@media(min-width:600px) and (max-width:875px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "hd hd"
+        "main main"
+        "ft ft";
+    }
+}
+
+@media(min-width:876px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "hd hd hd hd hd"
+        "main main main main main"
+        "ft ft ft ft ft";
+    }
+}
+
 .logo{
     display: inline-block;
     text-align: left;
@@ -35,6 +81,7 @@ nav a:hover{
 body{
     background-image: url("../images/clouds.jpg");
     font-family: 'Play', sans-serif;
+    font-size: x-large;
 }
 
 .footer{

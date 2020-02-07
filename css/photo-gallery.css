@@ -1,3 +1,59 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+}
+
+#header{
+    grid-area: hd;    
+}
+
+#photo {
+    grid-area: main;
+}
+
+#footer{
+    grid-area: ft;
+}
+
+@media(min-width:600px) and (max-width:875px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "hd hd"
+        "main main"
+        "ft ft";
+    }
+}
+
+@media(min-width:876px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "hd hd hd hd hd"
+        "main main main main main"
+        "ft ft ft ft ft";
+    }
+}
+
+.main{
+    color: rgb(255, 250, 250);
+    background-color: rgba(157, 157, 158, 0.78);
+    border: 3px solid rgb(165, 139, 53);
+    border-radius: 5px;
+    padding-left: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
 .logo{
     display: inline-block;
     text-align: left;
@@ -56,4 +112,41 @@ li {
 
 a {
     color: rgb(255, 250, 250);
+}
+
+input[type=button]:hover {
+    background-color: rgb(66, 14, 55);
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(165, 139, 53);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+div.gallery {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid rgb(255, 250, 250);
+    width: 33.33%;
+}
+  
+div.gallery:hover {
+    border: 1px solid rgba(157, 157, 158, 0.78);
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: x-large;
 }

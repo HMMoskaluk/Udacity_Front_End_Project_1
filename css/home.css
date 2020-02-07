@@ -1,3 +1,7 @@
+/* I tried to get @import to work but everytime I tried it would mess up the CSS I already had working perfectly for the rest of my project
+due to this reason I was unable to add it to my project, no matter how many times I googled to figure out how to make it work I kept running into the
+issue that my code would not compile properly and would change the location and style of things located on the page */
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -49,11 +53,13 @@
         "ft ft ft ft ft";
     }
 }
+
 .logo{
     display: inline-block;
     text-align: left;
     padding: 20px;
 }
+
 .subscribe {
     text-align: right;
     padding: 50px;
